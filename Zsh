@@ -1,0 +1,26 @@
+
+alias ls='ls --color=auto'
+alias update='sudo pacman -Syuu'
+alias yupdate='yaourt -Syua --devel'
+alias color='/bin/color.sh'
+alias install='sudo pacman -S'
+alias fetch='screenfetch'
+alias trim='sudo fstrim -v /'
+alias purge='sudo pacman -R'
+alias pac='/bin/pacman.sh'
+alias space='/bin/space.sh'
+alias tv='/bin/tv.sh'
+alias clock='tty-clock'
+alias rain='/bin/rain.sh'
+alias clean='sudo pacman -Rns $(pacman -Qqtd)'
+alias rainbow='toilet -f mono12 --gay'
+alias yao='yaourt'
+alias time='/bin/clock.sh'
+alias maze='/bin/maze.sh'
+
+PROMPT="%F{blue}%>>>>> %F{red}"
+preexec () { echo -ne "\e[0m" }
+
+
+How to install 
+chsh -s /bin/zsh kupo
